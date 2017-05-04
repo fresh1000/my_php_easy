@@ -1,0 +1,31 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* Badge & label overrides
+ ========================================================================== */
+
+// Reset border-radius
+.label { .border-radius(0); }
+
+.badge {
+    padding: 0 @badge-notification-padding-horizontal;
+    border-bottom: none;
+    background: @badge-notification-background;
+    color: @badge-notification-color;
+}
+
+.badge {
+
+    &-important {
+        background: @badge-danger-border;
+    }
+
+    &-warning {
+        background: @badge-warning-border;
+        color: @badge-notification-warning-color;
+    }
+
+    &-success {
+        background: @badge-success-border;
+    }
+
+}

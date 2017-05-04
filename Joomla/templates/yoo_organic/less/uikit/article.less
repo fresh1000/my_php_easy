@@ -1,0 +1,73 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Article
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@article-title-font-size:                       round(@global-font-size * 2.26); // 36px / 34px
+@article-title-line-height:                     round(@article-title-font-size * 1.17 ); // 42px / 40px
+@article-title-font-weight:                     300;
+@article-title-text-transform:                  @global-text-transform;
+
+@article-meta-color:                            @global-muted-color;
+@article-meta-font-size:                        @global-font-size;
+
+@article-lead-color:                            @global-color;
+@article-lead-font-size:                        round(@global-font-size * 1.28); // 18px / 19px
+@article-lead-line-height:                      round(@article-lead-font-size * 1.32); // 24px / 25px
+@article-lead-font-weight:                      300;
+
+@article-divider-margin:                        @global-margin-large;
+@article-divider-border:                        @global-border;
+
+
+// Sub-object `uk-article-title`
+// ========================================================================
+
+.hook-article-title() {}
+
+
+// Sub-object `uk-article-meta`
+// ========================================================================
+
+.hook-article-meta() {}
+
+
+// Sub-object `uk-article-lead`
+// ========================================================================
+
+.hook-article-lead() {}
+
+
+// Sub-object `uk-article-divider`
+// ========================================================================
+
+.hook-article-divider() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-article-misc() {
+
+    .uk-article { position: relative; }
+
+    /*
+     * Vertical gutter for articles
+     */
+
+    .uk-article + .uk-article { margin-top: @grid-gutter-vertical; }
+
+    /* Large screen and bigger */
+    @media (min-width: @breakpoint-xlarge) {
+
+        .uk-article + .uk-article { margin-top: @grid-gutter-large-vertical; }
+
+    }
+
+}

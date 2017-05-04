@@ -1,0 +1,47 @@
+@font-face
+{
+	font-family: errorfont;
+	src: url('fonts/Microgrammad-medext.oet');
+	src: url('fonts/Microgrammad-medext.ttf');
+}
+body ul {
+	list-style: none;
+	margin: 20px;
+}
+.error {
+	margin-top:5%;
+}
+.error-header {
+	display: none;
+}
+#error-code {
+	text-align:center;
+	font-family: errorfont;
+	display: block;
+	color: #1f7ef3;
+	padding: 30px 30px 30px 105px;
+	font-size: 50px;
+	text-shadow:
+			0px 2px 1px #fff,
+		 	0px 3px 0px #cfcfcf;
+	text-transform: uppercase;
+	line-height: 50px;
+}
+#error-code strong{
+	color: black;
+}
+#error-body {
+	margin-top: 50px;
+	font-family: Arial;
+	color: #666666;
+	font-size: 14px;
+	text-align: center;
+}
+#error-body ul li a,#error-body ul li a:visited,#error-body ul li a:hover
+{
+	font-family:"Arial";
+	font-size: 11px;
+	line-height: 20px;
+	color: #a9a9a9;
+	text-decoration: none;
+}

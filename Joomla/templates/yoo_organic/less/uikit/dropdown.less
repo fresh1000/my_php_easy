@@ -1,0 +1,72 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Dropdown
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@dropdown-z-index:                              @global-z-index + 20;
+@dropdown-margin-top:                           10px;
+@dropdown-padding:                              30px;
+@dropdown-background:                           @global-background;
+@dropdown-color:                                @global-color;
+
+@dropdown-divider-border-width:                 @global-border-width;
+@dropdown-divider-border:                       @global-border;
+
+@dropdown-small-padding:                        15px;
+
+@dropdown-navbar-margin:                        20px;
+@dropdown-navbar-background:                    @global-background;
+@dropdown-navbar-color:                         @global-dark-color;
+
+//
+// New
+//
+
+@dropdown-box-shadow:                           rgba(0,0,0,0.08);
+
+@dropdown-navbar-box-shadow:                    rgba(0,0,0,0.05);
+
+
+// Component
+// ========================================================================
+
+.hook-dropdown() {
+    box-shadow: 0 1px 10px 0 @dropdown-box-shadow;
+}
+
+
+// Modifier: `uk-dropdown-navbar`
+// ========================================================================
+
+.hook-dropdown-navbar() {
+    box-shadow: 0 1px 10px 0 @dropdown-navbar-box-shadow;
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-dropdown-misc() {
+
+    /* Nav in dropdown
+     ========================================================================== */
+
+    .uk-dropdown .uk-nav { margin: 0; }
+
+
+    /* Modifier `uk-dropdown-small`
+     ========================================================================== */
+
+    /*
+     * Nav in dropdown
+     */
+
+    .uk-dropdown-small .uk-nav { margin: 0; }
+
+}

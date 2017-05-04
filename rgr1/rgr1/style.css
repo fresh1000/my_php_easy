@@ -1,0 +1,107 @@
+html,body{margin:0;padding:0}
+body {      background: url('img/lake-balaton.jpg') no-repeat  fixed;
+            background-size: 100% 100%;
+            font-family: Trebuchet MS, Arial, Times New Roman;
+            font-size: 12px;
+
+}
+.dog {      background: url('img/beach-.jpg') no-repeat  fixed;
+            background-size: 100% 100%;
+            font-family: Trebuchet MS, Arial, Times New Roman;
+            font-size: 12px;
+
+}
+.citaty{background: url('img/beach-18.jpg') no-repeat  fixed;
+            background-size: 100% 100%;
+            font-family: Trebuchet MS, Arial, Times New Roman;
+            font-size: 12px;}
+.cit {
+    background: none repeat scroll 0 0 #fafafa;
+    border-bottom: 3px dashed #bababa;
+    border-top: 3px dashed #bababa;
+    color: #878787;
+    font-family: Georgia,serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.45;
+    padding: 10px 15px;
+    position: relative;
+    text-align: center;
+    width: auto;
+}
+
+#container {
+/*
+            width: 100%;
+            height: 600px;
+*/
+}
+
+#header {    position:relative
+            /*background: #66CCCC;*/
+            height: 100px;
+            font-family: 'Bad Script', cursive;
+            font-size: 30px;
+}
+
+
+#wrapper{ float:left;width:100%}
+
+#content { 
+    font-size: 16px;
+    font-family: 'Comfortaa', cursive;
+            margin: 0 25%;
+/*            background: #d2d0d2;*/
+            width: 50%;
+/*            height: 400px;*/
+            
+}
+#menu {     
+/*            background: url('img/wood3.jpg') no-repeat  fixed;*/
+            background-size: 20% 100%;
+            float: left;
+            width: 25%;
+/*            height: 400px;*/
+            margin-left:-99%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+/*    background-color: #a6b7eb;*/
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+#right{ font-size: 12px;
+        font-family: 'Comfortaa', cursive;   
+        float:left;width:25%;margin-left:-25%;
+            background-color:#ffffff;
+            height: 400px;
+        opacity:0.5;
+          
+/*#right:hover{width:25%}*/
+        }
+right p{color:#000000
+ opacity:1;}
+#footer {   
+            width:100%;
+/*            clear:both;
+    position: fixed;*/
+            clear:left;
+/*            margin-top: -100px;*/
+/*            background: #5c4c3c;*/
+        margin-top: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+}

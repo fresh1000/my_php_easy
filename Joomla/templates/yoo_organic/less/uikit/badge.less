@@ -1,0 +1,108 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Badge
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@badge-background:                              @global-primary-background;
+@badge-padding-horizontal:                      0;
+@badge-font-size:                               round(@global-font-size * 0.74); // 10px / 11px
+@badge-font-weight:                             300;
+@badge-line-height:                             round(@badge-font-size * 1.36); // 14px / 15px
+@badge-color:                                   @global-dark-color;
+@badge-hover-color:                             @global-dark-color;
+
+@badge-notification-font-size:                  round(@global-font-size * 0.85); // 12px / 13px
+@badge-notification-line-height:                round(@badge-notification-font-size * 1.46); // 18px / 19px
+
+@badge-success-background:                      @global-success-background;
+@badge-warning-background:                      @global-warning-background;
+@badge-danger-background:                       @global-danger-background;
+
+//
+// New
+//
+
+@badge-border-width:                            2px;
+@badge-border:                                  @global-primary-background;
+@badge-text-transform:                          @global-text-transform;
+
+@badge-success-border:                          @global-success-background;
+@badge-warning-border:                          darken(@global-warning-background, 10%);
+@badge-danger-border:                           @global-danger-background;
+
+@badge-notification-padding-horizontal:         5px;
+@badge-notification-background:                 @global-primary-background;
+@badge-notification-color:                      @global-contrast-color;
+@badge-notification-warning-color:              darken(@global-warning-color, 15%);
+
+
+
+// Component
+// ========================================================================
+
+.hook-badge() {
+    border-bottom: @badge-border-width solid @badge-border;
+    background: transparent;
+    text-transform: @badge-text-transform;
+}
+
+
+// Color modifier
+// ==========================================================================
+
+//
+// Modifier: `bagde-success`
+//
+
+.hook-badge-success() {
+    border-bottom-color: @badge-success-border;
+    background: transparent;
+}
+
+//
+// Modifier: `badge-warning`
+//
+
+.hook-badge-warning() {
+    border-bottom-color: @badge-warning-border;
+    background: transparent;
+}
+
+//
+// Modifier: `badge-danger`
+//
+
+.hook-badge-danger() {
+    border-bottom-color: @badge-danger-border;
+    background: transparent;
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-badge-misc() {
+
+    .uk-badge-notification {
+        padding: 0 @badge-notification-padding-horizontal;
+        border-bottom: none;
+        background: @badge-notification-background;
+        color: @badge-notification-color;
+    }
+
+    .uk-badge-notification.uk-badge-success { background: @badge-success-border; }
+
+    .uk-badge-notification.uk-badge-warning {
+        background: @badge-warning-background;
+        color: @badge-notification-warning-color;
+    }
+
+    .uk-badge-notification.uk-badge-danger { background: @badge-danger-border; }
+
+}

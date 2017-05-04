@@ -1,0 +1,59 @@
+.contact-details,.contact-form{
+	font-size: 12px;
+	line-height: 18px;
+	display: inline-table;
+}
+.contact-form{
+	width: 49%;
+}
+.contact-details *{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666; 
+}
+.contact-details fieldset{
+	margin-right: 60px;
+}
+.contact-details legend,.contact-form legend{
+	font-size: 18px;
+	font-family: Georgia;
+	color: #666666;
+	line-height: 60px;
+	border-bottom: none;
+	margin: 0;
+}
+.contact-misc *{
+	font-size: 12px;
+	line-height: 18px;
+}
+.jicons-icons{
+	display: none;
+}
+.contact-address *,.contact-contactinfo *{
+	margin-bottom: 0;
+}
+.contact dd,dt{
+	margin-left: 0px;
+}
+.contact-form fieldset input, .contact-form fieldset textarea{
+	width: 82%;
+	border-radius: 0;
+	background: #e6e6e6;
+	border: 1px solid #e3e3e3;
+}
+.contact-form fieldset dd.send-copy label, .contact-form fieldset dd.send-copy input {
+	display: inline;
+	width: 30px;
+	margin: 0;
+}
+.contact-form .button{
+	margin : 10px 0px;
+}
+.contact-form .button .btn{
+	font-family: Georgia;
+	font-size: 14px;
+	padding: 7px 16px;
+	text-shadow: none;
+}
+.contact .jicons-text{
+	font-weight: bold;
+}

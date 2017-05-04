@@ -1,0 +1,83 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Base
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@base-body-background:                          @global-background;
+@base-body-font-family:                         'Lato';
+@base-body-font-weight:                         300;
+@base-body-font-size:                           @global-font-size;
+@base-body-line-height:                         @global-line-height;
+@base-body-color:                               @global-color;
+
+@base-link-color:                               @global-link-color;
+@base-link-hover-color:                         @global-link-hover-color;
+@base-ins-background:                           fade(@global-secondary-background, 80%);
+@base-ins-color:                                @global-color;
+@base-mark-background:                          fade(@global-primary-background, 80%);
+@base-mark-color:                               @global-contrast-color;
+
+@base-margin-vertical:                          @global-margin;
+
+@base-heading-font-family:                      'Lato';
+@base-heading-font-weight:                      300;
+@base-heading-color:                            @global-dark-color;
+@base-heading-text-transform:                   @global-text-transform;
+@base-heading-margin-top:                       @global-margin-large;
+@base-h1-font-size:                             round(@global-font-size * 2.66); // 36px / 40px
+@base-h1-line-height:                           round(@base-h1-font-size * 1.154); // 42px / 46px
+@base-h2-font-size:                             round(@global-font-size * 1.74); // 24px / 26px
+@base-h2-line-height:                           round(@base-h2-font-size * 1.27); // 30px / 36px
+@base-h3-font-size:                             round(@global-font-size * 1.33); // 18px / 20px
+@base-h3-line-height:                           round(@base-h3-font-size * 1.32); // 24px / 26px
+@base-h4-font-size:                             round(@global-font-size * 1.2); // 16px / 18px
+@base-h4-line-height:                           round(@base-h4-font-size * 1.36); // 22px / 26px
+@base-h5-font-size:                             @global-font-size; // 14px / 15px
+@base-h5-line-height:                           @global-line-height; // 20px / 22px
+@base-h6-font-size:                             round(@global-font-size * 0.93); // 12px / 14px
+@base-h6-line-height:                           round(@base-h6-font-size * 1.46); // 18px / 20px
+
+@base-hr-border:                                @global-border;
+@base-hr-border-width:                          @global-border-width;
+
+@base-blockquote-border:                        rgba(0,0,0,0);
+@base-blockquote-border-width:                  0;
+@base-blockquote-small-color:                   @global-muted-color;
+@base-blockquote-font-size:                     round(@global-font-size * 1.13); // 16px / 17px
+@base-blockquote-line-height:                   round(@base-blockquote-font-size * 1.4); // 22px / 24px
+
+@base-code-font-size:                           round(@global-font-size * 0.85); // 12px / 14px
+
+@base-pre-padding:                              20px;
+@base-pre-background:                           @global-light-background;
+@base-pre-color:                                @global-color;
+@base-pre-font-size:                            round(@global-font-size * 0.93); // 12px / 14px
+@base-pre-line-height:                          round(@base-pre-font-size * 1.46); // 18px / 20px
+
+
+// Body
+// ========================================================================
+
+.hook-base-body() {}
+
+
+// Code and preformatted text
+// ========================================================================
+
+.hook-base-code() {}
+
+.hook-base-code-reset() {}
+
+.hook-base-pre() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-base-misc() {}

@@ -1,0 +1,170 @@
+.componentheading, h1 {
+    font-size: 24px;
+    line-height: 24px;
+}
+h2 {
+    font-size: 18px;
+    line-height: 24px;
+}
+h3 {
+    font-size: 16px;
+}
+h4 {
+	font-size: 14px;
+}
+h5, h6 {
+	font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6, .componentheading {
+	font-weight: normal;
+	margin: 5px 0 10px;
+	font-family: Arial;
+	color: #1b1b1b;
+}
+/* Image Style */
+
+
+/* FONT */
+p {
+	font-size: 12px;
+	line-height: 18px;
+}
+.blockquote, q, blockquote {
+	font-size: 13px;
+	font-family: Arial;
+	font-style: italic;
+	color: #3c3c3c;
+}
+.text-drop-cap::first-letter {
+	float: left;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 8px 5px 0 0;
+    text-transform: uppercase;
+    color: #7e7e7e;
+}
+.box-content {
+	margin: 10px 0 15px 0;
+	padding: 20px;
+	border: 1px solid #c6c6c6;
+}
+.box-note {
+	margin: 10px 0 15px 0;
+	padding: 20px;
+	background: #efefef;
+	border: 1px solid #c6c6c6;
+}
+.box-info,
+.box-download,
+.box-hint {
+	min-height: 22px;
+	padding: 8px 8px 8px 28px;
+	line-height: 24px;
+	margin: 5px 15px;
+}
+.box-info {
+	background: url("../images/icons/typo/info.png") no-repeat scroll 2px center;
+}
+.box-download {
+	background: url("../images/icons/typo/download.png") no-repeat scroll 2px center;
+}
+.box-hint {
+	background: url("../images/icons/typo/star.png") no-repeat scroll 2px center;
+}
+.box-warning,
+.box-checked,
+.box-red,
+.box-light{
+	margin: 10px;
+	padding: 10px 10px 10px 68px;
+	border-radius: 5px;
+}
+
+.box-warning {
+	border: solid 1px #ebd97b;
+	background: url("../images/icons/typo/warning.png") no-repeat scroll 20px center #fff7ce;
+}
+
+.box-checked {
+	border: solid 1px #a6e29b;
+	background: url("../images/icons/typo/checked.png") no-repeat scroll 20px center #ddffd7;
+}
+.box-red {
+	border: solid 1px #f1cece;
+	background: url("../images/icons/typo/red.png") no-repeat scroll 20px center #ffdcdc;
+}
+.box-light {
+	border: solid 1px #d8d8d8;
+	background: url("../images/icons/typo/light.png") no-repeat scroll 20px center #ececec;
+}
+
+/*----Table-------*/
+.table-heading tbody tr:first-child td,
+.table-heading tbody tr:first-child th{
+	background-color: #e2e2e2;
+}
+.table-striped tbody tr:nth-child(2n+1) td,
+.table-striped tbody tr:nth-child(2n+1) th {
+	background-color: #e2e2e2;
+}
+.table-striped tbody tr:nth-child(2n) td,
+.table-striped tbody tr:nth-child(2n) th{
+	background-color: #f0f0f0;
+}
+
+.table tbody tr:hover td,
+.table tbody tr:hover th{
+	background-color: #c8c8c8;
+}
+
+/*--------list style---------*/
+.the-check,
+.the-arrow,
+.the-dot,
+.the-double-arrow,
+.the-plus,
+.the-item,
+.the-nav,
+.the-doc,
+.the-cross{
+	list-style: none;
+}
+.the-check > li,
+.the-arrow > li,
+.the-dot > li,
+.the-double-arrow > li,
+.the-plus > li,
+.the-item > li,
+.the-nav > li,
+.the-doc > li,
+.the-cross > li{
+	padding: 4px 0 0 20px;
+}
+.the-check >li{
+	background: url("../images/icons/typo/the-check.png") 0 -100px no-repeat;
+}
+.the-arrow >li{
+	background: url("../images/icons/typo/the-arrow.png") 5px -90px no-repeat;
+}
+.the-dot >li{
+	background: url("../images/icons/typo/the-dot.png") 5px -91px no-repeat;
+}
+.the-double-arrow >li{
+	background: url("../images/icons/typo/the-double-arrow.png") 5px -91px no-repeat;
+}
+.the-cross >li{
+	background: url("../images/icons/typo/the-cross.png") 5px -90px no-repeat;
+}
+.the-doc >li{
+	background: url("../images/icons/typo/the-doc.png") 6px -96px no-repeat;
+}
+.the-item >li{
+	background: url("../images/icons/typo/the-item.png") 6px -97px no-repeat;
+}
+.the-plus >li{
+	background: url("../images/icons/typo/the-plus.png") 6px -98px no-repeat;
+}
+blockquote {
+border-left: 5px solid #2184ff;
+}

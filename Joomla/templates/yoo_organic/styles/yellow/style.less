@@ -1,0 +1,166 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import 'https://fonts.googleapis.com/css?family=Great+Vibes';
+@import 'https://fonts.googleapis.com/css?family=Antic+Slab:300,400';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,700';
+
+/* theme: Organic - yellow */
+
+//
+// General
+//
+
+@global-body-style: 'yellow';
+@global-border: #48484a;
+
+//
+// Typography
+//
+
+@global-color: #dbd8d8;
+@global-dark-color: #E2E2E2;
+@global-primary-color: #ffe791;
+@global-link-color: #ffe791;
+@global-link-hover-color: #ffe791;
+@global-contrast-color: #242222;
+@global-success-color: #5CB8A1;
+@global-warning-color: #BEB848;
+@global-danger-color: #D56868;
+@global-muted-color: #74746E;
+
+//
+// Backgrounds
+//
+
+@global-background: #3d3c3c;
+@global-light-background: #363535;
+@global-primary-background: #ffdc5e;
+@global-success-background: #5CB8A1;
+@global-danger-background: #D56868;
+
+//
+// Alert
+//
+
+@alert-background: fade(@global-primary-background, 90%);
+@alert-color: #42391c;
+@alert-warning-color: darken(@global-warning-color, 10%);
+
+//
+// Badge
+//
+
+@badge-notification-warning-color: darken(@global-warning-color, 20%);
+
+//
+// Base
+//
+
+@base-ins-background: @global-light-background;
+@base-body-font-family: 'Open Sans';
+@base-heading-font-family: 'Antic Slab';
+
+//
+// Button
+//
+
+@button-success-color: @global-dark-color;
+@button-success-hover-color: @global-dark-color;
+@button-success-active-color: @global-dark-color;
+@button-danger-color: @global-dark-color;
+@button-danger-hover-color: @global-dark-color;
+@button-danger-active-color: @global-dark-color;
+
+//
+// Dropdown
+//
+
+@dropdown-box-shadow: fade(darken(@dropdown-background, 10%), 10%);
+
+//
+// Nav
+//
+
+@offcanvas-panel-color: #babab7;
+@offcanvas-panel-title-color: #b1acac;
+@nav-offcanvas-color: #e6ecef;
+@nav-offcanvas-hover-background: darken(@offcanvas-bar-background, 3%);
+@nav-offcanvas-hover-color: #e6ecef;
+@nav-offcanvas-active-background: darken(@nav-offcanvas-hover-background, 1%);
+@nav-offcanvas-active-color: #dbd8d8;
+@nav-offcanvas-header-color: #dbd8d8;
+@nav-offcanvas-divider-border: lighten(@offcanvas-bar-background, 5%);
+@nav-offcanvas-nested-color: #babab7;
+@nav-offcanvas-nested-hover-color: #e6ecef;
+
+//
+// Navbar
+//
+
+@navbar-brand-color: @global-primary-background;
+@navbar-nav-active-color: @global-link-color;
+@navbar-color: #e6ecef;
+@navbar-nav-color: #e6ecef;
+@navbar-nav-hover-color: @global-primary-color;
+@navbar-nav-hover-border: #3c3c3c;
+@navbar-nav-active-border: #3c3c3c;
+@navbar-nav-font-family: 'Antic Slab';
+
+//
+// Offcanvas
+//
+
+@offcanvas-bar-background: #2d2d2d;
+
+//
+// Panel
+//
+
+@panel-box-primary-color: #42391c;
+@panel-box-primary-title-color: #42391c;
+@panel-box-secondary-background: #363535;
+@panel-box-secondary-color: #C7C6C2;
+@panel-box-secondary-title-color: #E0DFD9;
+@panel-box-primary-box-shadow: #e5c75c;
+@panel-box-primary-link-color: lighten(@panel-box-primary-background, 30%);
+@panel-box-primary-link-hover-color: lighten(@panel-box-primary-background, 30%);
+@panel-box-secondary-link-color: @global-link-color;
+@panel-box-secondary-link-hover-color: @global-link-hover-color;
+@panel-box-secondary-box-shadow: #4a4848;
+@panel-box-primary-button-background: fade(@panel-box-primary-box-shadow, 60%);
+@panel-box-primary-button-hover-background: darken(@panel-box-primary-button-background, 3%);
+@panel-box-primary-button-active-background: darken(@panel-box-primary-button-hover-background, 3%);
+
+//
+// Search
+//
+
+@search-color: #e6ecef;
+@search-icon-color: #3c3c3c;
+@search-border: #3c3c3c;
+
+
+// Theme global variables
+// ==========================================================================
+
+@theme_widgetkit-style: 'dark';
+@theme-body-background: #2d2d2d;
+
+@theme_panel-box-primary-muted-color: #bfa137;
+@theme_panel-box-primary-icon-color: @panel-box-primary-color;
+@theme_panel-box-primary-icon-background: fade(@panel-box-primary-box-shadow, 70%);
+
+@theme_panel-box-secondary-icon-background: @panel-box-secondary-box-shadow;
+@theme_panel-box-secondary-icon-color: @panel-box-secondary-color;
+@theme_panel-box-secondary-form-border: fade(@panel-box-secondary-box-shadow, 60%);
+@theme_panel-box-secondary-form-color: @panel-box-secondary-color;
+@theme_panel-box-secondary-form-focus-border: @panel-box-secondary-box-shadow;
+@theme_panel-box-secondary-form-icon-color: fade(@panel-box-secondary-color, 60%);
+
+@widgetkit_slideshow-caption-hover-color: @global-contrast-color;
+
+@theme_panel-blank-color: #a4a2a2;
+@theme_panel-blank-link-color: @global-link-color;
+@theme_panel-blank-headline-color: #d8dade;
+
+@theme-footer-background: #363535;

@@ -1,0 +1,220 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Panel
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@panel-title-margin-bottom:                     @global-margin;
+@panel-title-font-size:                         round(@global-font-size * 1.33); // 18px / 20px
+@panel-title-font-weight:                       300;
+@panel-title-line-height:                       round(@panel-title-font-size * 1.33); // 24px / 26px
+@panel-title-color:                             @global-dark-color;
+@panel-title-text-transform:                    @global-text-transform;
+
+@panel-box-padding:                             40px;
+@panel-box-background:                          @global-background;
+@panel-box-color:                               @global-color;
+@panel-box-title-color:                         @global-dark-color;
+
+@panel-box-primary-background:                  @global-primary-background;
+@panel-box-primary-color:                       @global-contrast-color;
+@panel-box-primary-title-color:                 @global-contrast-color;
+
+@panel-box-secondary-background:                @global-secondary-background;
+@panel-box-secondary-color:                     #63553f;
+@panel-box-secondary-title-color:               #63553f;
+
+@panel-header-title-border:                     @global-border;
+@panel-header-title-color:                      @global-dark-color;
+
+@panel-space-padding:                           40px;
+
+@panel-divider-gutter:                          @global-grid-gutter;
+@panel-divider-gutter-large:                    @global-grid-gutter-large;
+@panel-divider-border:                          @global-border;
+
+//
+// New
+//
+
+@panel-box-primary-padding:                     30px;
+@panel-box-primary-border-width:                15px;
+@panel-box-primary-box-shadow-width:            @global-border-width;
+
+@panel-box-primary-box-shadow:                  lighten(@panel-box-primary-background, 10%);
+@panel-box-primary-link-color:                  lighten(@panel-box-primary-background, 40%);
+@panel-box-primary-link-hover-color:            @panel-box-primary-link-color;
+@panel-box-primary-badge-color:                 @panel-box-primary-color;
+@panel-box-primary-badge-border:                @panel-box-primary-badge-color;
+@panel-box-primary-button-color:                @panel-box-primary-color;
+@panel-box-primary-button-background:           lighten(@panel-box-primary-background, 4%);
+@panel-box-primary-button-hover-background:     lighten(@panel-box-primary-button-background, 3%);
+@panel-box-primary-button-active-background:    lighten(@panel-box-primary-button-hover-background, 3%);
+
+@panel-box-secondary-box-shadow:                darken(@panel-box-secondary-background, 12%);
+@panel-box-secondary-link-color:                darken(@panel-box-secondary-background, 25%);
+@panel-box-secondary-link-hover-color:          @panel-box-secondary-link-color;
+@panel-box-secondary-badge-color:               @panel-box-secondary-color;
+@panel-box-secondary-badge-border:              @panel-box-secondary-badge-color;
+@panel-box-secondary-button-color:              fade(@panel-box-secondary-color, 80%);
+@panel-box-secondary-button-background:         darken(@panel-box-secondary-background, 5%);
+@panel-box-secondary-button-hover-background:   darken(@panel-box-secondary-button-background, 3%);
+@panel-box-secondary-button-active-background:  darken(@panel-box-secondary-button-hover-background, 3%);
+
+@panel-header-background:                       @panel-box-background;
+@panel-header-padding:                          @panel-box-padding;
+
+
+// Sub-object: `uk-panel-title`
+// ========================================================================
+
+.hook-panel-title() {}
+
+
+// Sub-object: `uk-panel-badge`
+// ========================================================================
+
+.hook-panel-badge() {}
+
+
+// Modifier: `uk-panel-box`
+// ========================================================================
+
+.hook-panel-box() {}
+
+//
+// Sub-modifier: `uk-panel-box-primary`
+//
+
+.hook-panel-box-primary() {
+
+    padding: @panel-box-primary-padding;
+    border: @panel-box-primary-border-width solid @panel-box-primary-background;
+    box-shadow: inset 0 0 0 @panel-box-primary-box-shadow-width @panel-box-primary-box-shadow;
+
+    > a:not([class]),
+    > :not([class*='uk-nav']) a:not([class]) { color: @panel-box-primary-link-color; }
+
+    > a:not([class]):hover,
+    > :not([class*='uk-nav']) a:not([class]):hover { color: @panel-box-primary-link-hover-color; }
+
+    .uk-button:not(.uk-button-primary):not(.uk-button-success):not(.uk-button-danger) {
+
+        background: @panel-box-primary-button-background;
+        color: @panel-box-primary-button-color;
+
+        &:hover,
+        &:focus { background: @panel-box-primary-button-hover-background; }
+
+        &:active,
+        &.uk-active { background: @panel-box-primary-button-active-background; };
+
+    }
+
+    .uk-button-primary {
+
+        background: lighten(@panel-box-primary-button-background, 4%);
+
+        &:hover,
+        &:focus { background: lighten(@panel-box-primary-button-hover-background, 3%); }
+
+        &:active,
+        &.uk-active { background: lighten(@panel-box-primary-button-active-background, 3%); };
+
+    }
+
+    .uk-badge { color: @panel-box-primary-badge-color; }
+    .uk-badge:not(.uk-badge-success):not(.uk-badge-danger):not(.uk-badge-warning) { border-color: @panel-box-primary-badge-border; }
+
+
+}
+
+//
+// Sub-modifier: `uk-panel-box-secondary`
+//
+
+.hook-panel-box-secondary() {
+
+    padding: @panel-box-primary-padding;
+    border: @panel-box-primary-border-width solid @panel-box-secondary-background;
+    box-shadow: inset 0 0 0 @panel-box-primary-box-shadow-width @panel-box-secondary-box-shadow;
+
+    > a:not([class]),
+    > :not([class*='uk-nav']) a:not([class]) { color: @panel-box-secondary-link-color; }
+
+    > a:not([class]):hover,
+    > :not([class*='uk-nav']) a:not([class]):hover { color: @panel-box-secondary-link-hover-color; }
+
+    .uk-button:not(.uk-button-primary):not(.uk-button-success):not(.uk-button-danger) {
+
+        background: @panel-box-secondary-button-background;
+        color: @panel-box-secondary-button-color;
+
+        &:hover,
+        &:focus { background: @panel-box-secondary-button-hover-background; }
+
+        &:active,
+        &.uk-active { background: @panel-box-secondary-button-active-background; };
+
+    }
+
+    .uk-button-primary {
+
+        background: darken(@panel-box-secondary-button-background, 3%);
+        color: @panel-box-secondary-button-color;
+
+        &:hover,
+        &:focus {
+            background: darken(@panel-box-secondary-button-hover-background, 3%);
+            color: @panel-box-secondary-button-color;
+        }
+
+        &:active,
+        &.uk-active {
+            background: darken(@panel-box-secondary-button-active-background, 3%);
+            color: @panel-box-secondary-button-color;
+        };
+
+    }
+
+    .uk-badge { color: @panel-box-secondary-badge-color; }
+    .uk-badge:not(.uk-badge-success):not(.uk-badge-danger):not(.uk-badge-warning) { border-color: @panel-box-secondary-badge-border; }
+
+}
+
+
+// Modifier: `uk-panel-header`
+// ========================================================================
+
+.hook-panel-header() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-panel-misc() {
+
+    /* Modifier: `uk-panel-box`
+     ========================================================================== */
+
+    /*
+     * Nav in panel
+     */
+
+    .uk-panel-box .uk-nav-side { margin: 0; }
+
+
+    /* Modifier: `uk-panel-header`
+     ========================================================================== */
+
+    .uk-panel-header {
+        padding: @panel-header-padding;
+        background: @panel-header-background;
+    }
+
+}

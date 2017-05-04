@@ -1,0 +1,11 @@
+#faces1{
+max-width: 100%;
+  height: auto;}
+#food1{max-width: 100%;
+  height: auto;}
+#faces2{max-width: 100%;
+  height: auto;}
+#dog{     display: block;
+    margin: auto;
+    width: 50%;
+}

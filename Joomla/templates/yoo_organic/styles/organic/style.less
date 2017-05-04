@@ -1,0 +1,116 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import 'https://fonts.googleapis.com/css?family=Great+Vibes';
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300';
+
+/* theme: Organic - organic */
+
+//
+// General
+//
+
+@global-body-style: 'organic';
+@global-border: #EBEAE8;
+
+//
+// Typography
+//
+
+@global-color: #888484;
+@global-dark-color: #575555;
+@global-primary-color: #EC4551;
+@global-link-color: #d83945;
+@global-link-hover-color: #d83945;
+@global-contrast-color: #f4eeef;
+@global-font-size: 16px;
+@global-muted-color: #C2BFBF;
+@global-success-color: #52B39B;
+@global-danger-color: #E06C6C;
+@global-warning-color: #D3C94B;
+
+//
+// Backgrounds
+//
+
+@global-background: #fff;
+@global-light-background: #f4f4f4;
+@global-primary-background: #d83945;
+@global-success-background: #77BEAD;
+@global-danger-background: #E06C6C;
+@global-warning-background: #FCF599;
+
+//
+// Alert
+//
+
+@alert-background: fade(@global-primary-background,90%);
+@alert-color: @global-contrast-color;
+
+//
+// Base
+//
+
+@base-ins-background: fade(@global-secondary-background, 90%);
+@base-body-font-family: 'Source Sans Pro';
+@base-body-font-weight: 200;
+@base-heading-font-family: 'Source Sans Pro';
+
+//
+// Dropdown
+//
+
+@dropdown-box-shadow: fade(darken(@dropdown-background, 15%), 10%);
+
+//
+// Nav
+//
+
+@nav-offcanvas-nested-color: fade(@global-contrast-color, 50%);
+
+//
+// Navbar
+//
+
+@navbar-nav-hover-color: @global-primary-color;
+@navbar-nav-active-color: @global-primary-color;
+@navbar-brand-color: @global-primary-color;
+@navbar-nav-font-family: 'Source Sans Pro';
+@navbar-nav-font-size: 18px;
+@navbar-nav-hover-border: fade(@global-dark-color, 7%);
+@navbar-brand-font-size: round(@global-font-size * 3.75);
+
+//
+// Offcanvas
+//
+
+@offcanvas-bar-background: #302F2E;
+
+//
+// Panel
+//
+
+@panel-box-secondary-background: #f2f2f2;
+@panel-box-primary-link-color: lighten(@panel-box-primary-background, 20%);
+@panel-box-primary-link-hover-color: lighten(@panel-box-primary-background, 20%);
+@panel-box-secondary-color: #6B6B6B;
+@panel-box-secondary-title-color: #6B6B6B;
+@panel-box-primary-color: #F6EAEB;
+@panel-box-primary-title-color: #F6EAEB;
+@panel-box-primary-box-shadow: #b42a35;
+@panel-box-secondary-box-shadow: #DFDFDF;
+
+
+// Theme global variables
+// ==========================================================================
+
+@theme_widgetkit-style: 'dark';
+@theme-body-background: #fafafa;
+
+@theme_panel-box-primary-icon-color: @panel-box-primary-color;
+
+@theme_panel-blank-color: #ACACAC;
+@theme_panel-blank-headline-color: #686868;
+@theme_panel-blank-link-color: @global-primary-color;
+@theme_panel-blank-brand-color: @global-primary-color;
+
+@theme-footer-background: #fff;

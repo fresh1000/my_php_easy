@@ -1,0 +1,168 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Great+Vibes';
+
+/* theme: Organic - brown */
+
+//
+// General
+//
+
+@global-body-style: 'brown';
+@global-border: #5c5a5a;
+
+//
+// Typography
+//
+
+@global-color: #b1acac;
+@global-dark-color: #cdc8c8;
+@global-link-color: #AF6A6A;
+@global-link-hover-color: #AF6A6A;
+@global-primary-color: #c77b7b;
+@global-warning-color: #d0cd8c;
+@global-muted-color: #827979;
+@global-danger-color: #b16565;
+
+//
+// Backgrounds
+//
+
+@global-background: #484545;
+@global-light-background: #434040;
+@global-primary-background: #a55353;
+@global-warning-background: #e1dea4;
+@global-success-background: #75A89C;
+@global-danger-background: #B96565;
+
+//
+// Alert
+//
+
+@alert-background: @global-primary-background;
+@alert-color: #f3dddc;
+@alert-warning-color: darken(@global-warning-color, 25%);
+@alert-success-color: darken(@global-success-color, 15%);
+@alert-danger-color: darken(@global-danger-color, 10%);
+
+//
+// Badge
+//
+
+@badge-notification-warning-color: darken(@global-warning-color, 30%);
+
+//
+// Base
+//
+
+@base-ins-background: fade(@global-light-background, 80%);
+@base-body-font-family: 'Roboto';
+@base-heading-font-family: 'Roboto';
+
+@button-background: darken(@global-light-background, 1%);
+
+//
+// Dropdown
+//
+
+@dropdown-box-shadow: fade(darken(@dropdown-background, 25%), 10%);
+
+//
+// Navbar
+//
+
+@navbar-nav-font-family: 'Roboto';
+
+
+//
+// Offcanvas
+//
+
+@offcanvas-bar-background: #333131;
+
+//
+// Panel
+//
+
+@panel-box-secondary-background: #434040;
+@panel-box-secondary-color: #b1acac;
+@panel-box-primary-color: #f3dddc;
+@panel-box-primary-title-color: #f3dddc;
+@panel-box-secondary-title-color: #d8d3d3;
+@panel-box-secondary-box-shadow: #625d5d;
+@panel-box-secondary-link-color: @global-link-color;
+@panel-box-secondary-link-hover-color: @global-link-color;
+@panel-box-primary-link-color: lighten(@panel-box-primary-background, 25%);
+
+//
+// Progress
+//
+
+@progress-bar-warning-color: darken(@global-warning-color, 25%);
+
+//
+// Nav
+//
+
+@offcanvas-panel-color: #827979;
+@offcanvas-panel-title-color: #b1acac;
+@nav-offcanvas-color: #b1acac;
+@nav-offcanvas-hover-background: darken(@offcanvas-bar-background, 3%);
+@nav-offcanvas-hover-color: #b1acac;
+@nav-offcanvas-active-background: darken(@nav-offcanvas-hover-background, 1%);
+@nav-offcanvas-active-color: #b1acac;
+@nav-offcanvas-header-color: #b1acac;
+@nav-offcanvas-divider-border: lighten(@offcanvas-bar-background, 5%);
+@nav-offcanvas-nested-hover-color: #b1acac;
+@nav-offcanvas-nested-color: #827979;
+
+//
+// Navbar
+//
+
+@navbar-nav-active-color: @global-link-color;
+@navbar-brand-color: @global-primary-background;
+@navbar-color:  #363535;
+@navbar-nav-color: #363535;
+@navbar-nav-hover-color: #a55352;
+@navbar-nav-active-color: #a55352;
+@navbar-brand-color: #c07776;
+@navbar-brand-hover-color: #c07776;
+@navbar-nav-hover-border: fade(#394040, 10%);
+
+//
+// Search
+//
+
+@search-color: #363535;
+@search-icon-color: fade(@search-color, 30%);
+@search-border: #dad2cb;
+
+//
+// Thumbnail
+//
+
+@thumbnail-hover-border: lighten(@global-border, 10%);
+
+
+// Theme global variables
+// ==========================================================================
+
+@theme_widgetkit-style: 'dark';
+@theme-body-background: #333131;
+
+@theme_panel-box-secondary-icon-background: @panel-box-secondary-box-shadow;
+@theme_panel-box-secondary-icon-color: @panel-box-secondary-color;
+@theme_panel-box-secondary-form-border: fade(@panel-box-secondary-box-shadow, 60%);
+@theme_panel-box-secondary-form-color: @panel-box-secondary-color;
+@theme_panel-box-secondary-form-focus-border: @panel-box-secondary-box-shadow;
+@theme_panel-box-secondary-form-icon-color: fade(@panel-box-secondary-color, 60%);
+
+@theme_panel-blank-color: #999595;
+@theme_panel-blank-headline-color: #d8d3d3;
+@theme_panel-blank-brand-color: #a55352;
+
+@theme-footer-background: #2d2a2a;
+
+@widgetkit_slideshow-caption-hover-color: #363535;
